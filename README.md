@@ -4,11 +4,13 @@
 <head>
     <title>Mundial 2026</title>
 
- <style>
+   
+<style>
         body {
             background-color:#3b875a;
             text-align: center;
             font-family: Arial, sans-serif;
+            color: white;
         }
 
         h1 {
@@ -23,8 +25,8 @@
             border-radius: 5px;
             cursor: pointer;
             margin: 5px;
-        } 
-        
+        }
+
         header {
             background-color:#3b875a;
             color: white;
@@ -35,35 +37,47 @@
 
         section {
             background-color:#3CB371;
-            margin-top: 15px;
-            padding: 15px;
+            margin: 25px auto;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 5px #ccc;
+            width: 80%;
         }
-        
+
+     
+        #mensagem {
+            font-family: Georgia, serif;
+            font-size: 24px;
+        }
+
     </style>
 </head>
 
 <body>
 
  <section>
-    <header id="inicio">
-        <h1>Copa do Mundo 2026</h1>
-    </header>
+        <header id="inicio">
+            <h1>Copa do Mundo 2026</h1>
+        </header>
     </section>
 
-   <p id="mensagem">Bem-vindo ao jogo!</p>
-    <section id="placar">
+  <p id="mensagem">Bem-vindo ao jogo!</p>
+  <section id="placar">
         <h2>Gols do Brasil: <span id="numero-golos">0</span></h2>
     </section>
-    <button class="botao" onclick="mostrarAlerta()">Aviso</button>
-    <button class="botao" onclick="marcarGolo()">Gol!</button>
-   <button class="botao" onclick="terminarJogo()">Fim do Jogo</button>
 
-   <button class="botao" onclick="animarTorcida()">Animar Torcida</button>
-    <button class="botao" onclick="modoEscuro()">Modo Escuro</button>
+ <button class="botao" onclick="mostrarAlerta()">Aviso</button>
+
+ <button class="botao" onclick="marcarGolo()">Gol!</button>
+
+  <button class="botao" onclick="terminarJogo()">Fim do Jogo</button>
+
+  <button class="botao" onclick="animarTorcida()">Animar Torcida</button>
+  <button class="botao" onclick="modoEscuro()">Modo Escuro</button>
+
 
   <script>
+
         var totalGolos = 0;
 
         function mostrarAlerta() {
@@ -81,24 +95,30 @@
 
         function animarTorcida() {
             document.getElementById("mensagem").innerHTML =
-                "Força Brasil! Rumo ao HEXA!";
+                "Força Brasil! Rumo ao HEXA 2030!😢 ";
         }
 
         function modoEscuro() {
             document.body.style.backgroundColor = "black";
             document.body.style.color = "white";
         }
+
     </script>
-   <section id="bandeira">
-        <h2>Bandeira do Brasil</h2>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeDWVfsToAcduM71E2M_10aLsWkhwnDka92cXubjoaag&s=10"
+
+
+  <section id="bandeira">
+
+   <h2>Bandeira do Brasil</h2>
+
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeDWVfsToAcduM71E2M_10aLsWkhwnDka92cXubjoaag&s=10"
              width="300"
              alt="VAI BRASIL!!!">
-    </section>
 
-   
+  </section>
+
+
   <footer id="contato">
-        <p> Isabelle e Reis! </p>
+        <p>Isabelle e Reis!</p>
     </footer>
 
 </body>
